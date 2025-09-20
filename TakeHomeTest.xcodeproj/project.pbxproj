@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		07F5D20C2E7F4C860034127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F5D2082E7F4C860034127C /* Assets.xcassets */; };
+		07F5D20D2E7F4C860034127C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2062E7F4C860034127C /* Article.swift */; };
+		07F5D20E2E7F4C860034127C /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2072E7F4C860034127C /* ArticleView.swift */; };
+		07F5D20F2E7F4C860034127C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2092E7F4C860034127C /* ContentView.swift */; };
+		07F5D2102E7F4C860034127C /* TakeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */; };
+		07F5D2122E7F4CD40034127C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2112E7F4CD40034127C /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		07B9E0C42E1FFAAE0035C3C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -19,14 +28,15 @@
 /* Begin PBXFileReference section */
 		07B9E08E2E1FE5ED0035C3C6 /* TakeHomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeHomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B9E0C02E1FFAAE0035C3C6 /* TakeHomeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F5D2062E7F4C860034127C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		07F5D2072E7F4C860034127C /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		07F5D2082E7F4C860034127C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F5D2092E7F4C860034127C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestApp.swift; sourceTree = "<group>"; };
+		07F5D2112E7F4CD40034127C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		07B9E0902E1FE5ED0035C3C6 /* TakeHomeTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TakeHomeTest;
-			sourceTree = "<group>";
-		};
 		07B9E0C12E1FFAAE0035C3C6 /* TakeHomeTestTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TakeHomeTestTests;
@@ -55,7 +65,7 @@
 		07B9E0852E1FE5ED0035C3C6 = {
 			isa = PBXGroup;
 			children = (
-				07B9E0902E1FE5ED0035C3C6 /* TakeHomeTest */,
+				07F5D20B2E7F4C860034127C /* TakeHomeTest */,
 				07B9E0C12E1FFAAE0035C3C6 /* TakeHomeTestTests */,
 				07B9E08F2E1FE5ED0035C3C6 /* Products */,
 			);
@@ -68,6 +78,19 @@
 				07B9E0C02E1FFAAE0035C3C6 /* TakeHomeTestTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		07F5D20B2E7F4C860034127C /* TakeHomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */,
+				07F5D2062E7F4C860034127C /* Article.swift */,
+				07F5D2072E7F4C860034127C /* ArticleView.swift */,
+				07F5D2092E7F4C860034127C /* ContentView.swift */,
+				07F5D2112E7F4CD40034127C /* ViewModel.swift */,
+				07F5D2082E7F4C860034127C /* Assets.xcassets */,
+			);
+			path = TakeHomeTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,9 +107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				07B9E0902E1FE5ED0035C3C6 /* TakeHomeTest */,
 			);
 			name = TakeHomeTest;
 			packageProductDependencies = (
@@ -162,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F5D20C2E7F4C860034127C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F5D2122E7F4CD40034127C /* ViewModel.swift in Sources */,
+				07F5D20D2E7F4C860034127C /* Article.swift in Sources */,
+				07F5D20E2E7F4C860034127C /* ArticleView.swift in Sources */,
+				07F5D20F2E7F4C860034127C /* ContentView.swift in Sources */,
+				07F5D2102E7F4C860034127C /* TakeHomeTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
