@@ -12,39 +12,20 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            List(viewModel.articles) { article in
-                NavigationLink(value: article) {
-                    HStack {
-                        AsyncImage(url: article.thumbnail) { phase in
-                            switch phase {
-                            case .empty:
-                                ProgressView()
-                            case .success(let image):
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                            default:
-                                Image(systemName: "newspaper")
-                            }
-                        }
-                            .frame(width: 80, height: 80)
-                            .clipShape(.rect(cornerRadius: 10))
+            List(viewModel.articles, rowContent: ArticleRow.init)
 
-                        VStack(alignment: .leading) {
-                            Text(article.section)
-                                .font(.caption.weight(.heavy))
+            //            List(viewModel.articles) { article in
+            //                ArticleRow(article: article)
+            //            }
 
-                            Text(article.title)
-                        }
-                    }
-                }
-            }
-//            .navigationDestination(for: Article.self) { article in
-//                ArticleView(article: article)
-//            }
+                .navigationDestination(for: Article.self, destination: ArticleView.init)
             
-            .navigationDestination(for: Article.self, destination: ArticleView.init)
-            .navigationTitle("Take Home Test")
+            //            .navigationDestination(for: Article.self) { article in
+            //                ArticleView(article: article)
+            //            }
+
+
+                .navigationTitle("Take Home Test")
         }
         .task(viewModel.loadArticles)
     }
