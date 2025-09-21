@@ -13,6 +13,9 @@ extension ContentView {
     class ViewModel {
         private(set) var articles = [Article]()
 
+        private(set) var loadstate = LoadState.loading
+        private(set) var loadError: (any Error)?
+
         func loadArticles() async {
             do {
                 let url = URL(string: "https://hws.dev/news")!
@@ -26,5 +29,9 @@ extension ContentView {
                 print(error.localizedDescription)
             }
         }
+    }
+
+    enum LoadState {
+        case loading, loaded, failed
     }
 }

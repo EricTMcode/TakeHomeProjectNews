@@ -89,11 +89,11 @@
 			children = (
 				07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */,
 				07F5D2062E7F4C860034127C /* Article.swift */,
-				07F5D2072E7F4C860034127C /* ArticleView.swift */,
 				07F5D2092E7F4C860034127C /* ContentView.swift */,
-				07F5D2152E7F4EF40034127C /* ArticleImage.swift */,
-				07F5D2132E7F4E710034127C /* ArticleRow.swift */,
 				07F5D2112E7F4CD40034127C /* ViewModel.swift */,
+				07F5D2132E7F4E710034127C /* ArticleRow.swift */,
+				07F5D2072E7F4C860034127C /* ArticleView.swift */,
+				07F5D2152E7F4EF40034127C /* ArticleImage.swift */,
 				07F5D2082E7F4C860034127C /* Assets.xcassets */,
 			);
 			path = TakeHomeTest;
