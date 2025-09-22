@@ -21,19 +21,20 @@ struct ContentView: View {
                     ProgressView("Loading..")
                         .controlSize(.extraLarge)
                 } else {
-                    List(viewModel.articles, rowContent: ArticleRow.init)
+                    List(viewModel.filteredArticles, rowContent: ArticleRow.init)
                         .navigationTitle("Take Home Test")
                         .navigationDestination(for: Article.self, destination: ArticleView.init)
+                        .refreshable(action: viewModel.loadArticles)
+                        .searchable(text: $viewModel.filterText, prompt: "Filter articles")
                 }
             }
+
             //            List(viewModel.articles) { article in
             //                ArticleRow(article: article)
             //            }
-
             //            .navigationDestination(for: Article.self) { article in
             //                ArticleView(article: article)
             //            }
-
         }
         .task(viewModel.loadArticles)
     }
