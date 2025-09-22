@@ -25,7 +25,7 @@ struct ContentView: View {
                         .navigationTitle("Take Home Test")
                         .navigationDestination(for: Article.self, destination: ArticleView.init)
                         .refreshable(action: viewModel.loadArticles)
-                        .searchable(text: $viewModel.filterText, prompt: "Filter articles")
+                        .searchable(text: $viewModel.filterText, prompt: "Filter articles ")
                 }
             }
 
