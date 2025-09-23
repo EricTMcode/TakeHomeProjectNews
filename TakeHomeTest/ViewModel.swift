@@ -23,10 +23,13 @@ extension ContentView {
 
         private var urlSession: any DataFetching
 
+        /// The array of articles that matches the user's filter text or,
+        /// all articles if the filter text is empty.
         var filteredArticles: [Article] {
             if filterText.isEmpty {
                 articles
             } else {
+                // Using LocalizedStandardContains() here means we ignore case and diactrics.
                 articles.filter { $0.title.localizedStandardContains(filterText) }
             }
         }
