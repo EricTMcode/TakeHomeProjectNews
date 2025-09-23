@@ -16,6 +16,7 @@
 		07F5D2142E7F4E710034127C /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2132E7F4E710034127C /* ArticleRow.swift */; };
 		07F5D2162E7F4EF40034127C /* ArticleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2152E7F4EF40034127C /* ArticleImage.swift */; };
 		07F5D21A2E818EC90034127C /* LoadFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2192E818EC90034127C /* LoadFailedView.swift */; };
+		07F5D21C2E8195C40034127C /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D21B2E8195C40034127C /* DataFetching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		07F5D2132E7F4E710034127C /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
 		07F5D2152E7F4EF40034127C /* ArticleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleImage.swift; sourceTree = "<group>"; };
 		07F5D2192E818EC90034127C /* LoadFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFailedView.swift; sourceTree = "<group>"; };
+		07F5D21B2E8195C40034127C /* DataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -98,6 +100,7 @@
 				07F5D2072E7F4C860034127C /* ArticleView.swift */,
 				07F5D2152E7F4EF40034127C /* ArticleImage.swift */,
 				07F5D2082E7F4C860034127C /* Assets.xcassets */,
+				07F5D21B2E8195C40034127C /* DataFetching.swift */,
 			);
 			path = TakeHomeTest;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				07F5D20E2E7F4C860034127C /* ArticleView.swift in Sources */,
 				07F5D20F2E7F4C860034127C /* ContentView.swift in Sources */,
 				07F5D2102E7F4C860034127C /* TakeHomeTestApp.swift in Sources */,
+				07F5D21C2E8195C40034127C /* DataFetching.swift in Sources */,
 				07F5D2142E7F4E710034127C /* ArticleRow.swift in Sources */,
 				07F5D2162E7F4EF40034127C /* ArticleImage.swift in Sources */,
 				07F5D21A2E818EC90034127C /* LoadFailedView.swift in Sources */,

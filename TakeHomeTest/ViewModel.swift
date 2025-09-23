@@ -21,6 +21,8 @@ extension ContentView {
 
         var filterText = ""
 
+        private var urlSession: any DataFetching
+
         var filteredArticles: [Article] {
             if filterText.isEmpty {
                 articles
@@ -29,12 +31,16 @@ extension ContentView {
             }
         }
 
+        init(session: any DataFetching = URLSession.shared) {
+            self.urlSession = session
+        }
+
         func loadArticles() async {
             loadstate = .loading
 
             do {
                 let url = URL(string: "https://hws.dev/news")!
-                let (data, _) = try await URLSession.shared.data(from: url)
+                let (data, _) = try await urlSession.data(from: url)
 
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
