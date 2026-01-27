@@ -31,6 +31,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		07517F662F29559B00D21257 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
 		07B9E0C12E1FFAAE0035C3C6 /* TakeHomeTestTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TakeHomeTestTests;
@@ -77,6 +82,7 @@
 		07F5D20B2E7F4C860034127C /* TakeHomeTest */ = {
 			isa = PBXGroup;
 			children = (
+				07517F662F29559B00D21257 /* Model */,
 				07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */,
 				07F5D2092E7F4C860034127C /* ContentView.swift */,
 				07F5D2082E7F4C860034127C /* Assets.xcassets */,
@@ -98,6 +104,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				07517F662F29559B00D21257 /* Model */,
 			);
 			name = TakeHomeTest;
 			packageProductDependencies = (
