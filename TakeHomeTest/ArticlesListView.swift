@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ArticlesListView: View {
     @State private var articles = [Article]()
 
     var body: some View {
@@ -16,7 +16,7 @@ struct ContentView: View {
                 NavigationLink(article.title, value: article)
             }
             .navigationDestination(for: Article.self) { article in
-                Text(article.text)
+                ArticleView(article: article)
             }
         }
         .task(loadArticles)
@@ -35,5 +35,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ArticlesListView()
 }
