@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07F5D20C2E7F4C860034127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F5D2082E7F4C860034127C /* Assets.xcassets */; };
 		07F5D20F2E7F4C860034127C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D2092E7F4C860034127C /* ContentView.swift */; };
-		07F5D2102E7F4C860034127C /* TakeHomeTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +26,17 @@
 		07B9E0C02E1FFAAE0035C3C6 /* TakeHomeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeHomeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F5D2082E7F4C860034127C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F5D2092E7F4C860034127C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeTestApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		07517F662F29559B00D21257 /* Model */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Model;
+			sourceTree = "<group>";
+		};
+		07517F692F2956FB00D21257 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
 			sourceTree = "<group>";
 		};
 		07B9E0C12E1FFAAE0035C3C6 /* TakeHomeTestTests */ = {
@@ -82,8 +85,8 @@
 		07F5D20B2E7F4C860034127C /* TakeHomeTest */ = {
 			isa = PBXGroup;
 			children = (
+				07517F692F2956FB00D21257 /* App */,
 				07517F662F29559B00D21257 /* Model */,
-				07F5D20A2E7F4C860034127C /* TakeHomeTestApp.swift */,
 				07F5D2092E7F4C860034127C /* ContentView.swift */,
 				07F5D2082E7F4C860034127C /* Assets.xcassets */,
 			);
@@ -107,6 +110,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				07517F662F29559B00D21257 /* Model */,
+				07517F692F2956FB00D21257 /* App */,
 			);
 			name = TakeHomeTest;
 			packageProductDependencies = (
@@ -201,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F5D20F2E7F4C860034127C /* ContentView.swift in Sources */,
-				07F5D2102E7F4C860034127C /* TakeHomeTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
