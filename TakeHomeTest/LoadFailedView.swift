@@ -9,10 +9,21 @@ import SwiftUI
 
 struct LoadFailedView: View {
     var error: (any Error)?
-    var retry: () -> Void
+    var retry: () async -> Void
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ContentUnavailableView {
+            Text("Load Error")
+                .font(.headline)
+        } description: {
+            Text("There was an error loading the articles. Please try again later.")
+        } actions: {
+            Button("Retry") {
+                Task {
+                    await retry()
+                }
+            }
+        }
     }
 }
 
