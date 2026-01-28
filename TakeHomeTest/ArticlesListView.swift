@@ -18,7 +18,6 @@ struct ArticlesListView: View {
         }
         .task(viewModel.loadArticles)
     }
-
 }
 
 #Preview {
