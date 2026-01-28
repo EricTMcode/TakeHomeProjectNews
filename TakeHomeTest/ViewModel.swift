@@ -23,11 +23,13 @@ extension ArticlesListView {
         var filterText = ""
 
         private var urlSession: any DataFetching
-
+        /// The array of articles that matches the user's filter text, or
+        /// all articles if the filter text is empty
         var filteredArticles: [Article] {
             if filterText.isEmpty {
                 articles
             } else {
+                // Using localizedStandardContains() here means we ignore case and diacritics.
                 articles.filter {
                     $0.title.localizedStandardContains(filterText)
                 }
