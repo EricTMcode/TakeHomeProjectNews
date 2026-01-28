@@ -22,6 +22,8 @@ extension ArticlesListView {
 
 
         func loadArticles() async {
+            loadState = .loading
+
             do {
                 let url = URL(string: "https://hws.dev/news")!
                 let (data, _) = try await URLSession.shared.data(from: url)
@@ -30,8 +32,11 @@ extension ArticlesListView {
                 decoder.dateDecodingStrategy = .iso8601
 
                 articles = try decoder.decode([Article].self, from: data)
+                loadState = .loaded
             } catch {
                 print(error.localizedDescription)
+                loadState = .failed
+                loadError = error
             }
         }
     }
