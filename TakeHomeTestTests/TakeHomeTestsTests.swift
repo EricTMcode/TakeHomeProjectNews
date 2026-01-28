@@ -15,6 +15,7 @@ struct TakeHomeTestsTests {
         let viewModel = ArticlesListView.ViewModel()
 
         #expect(viewModel.articles.isEmpty, "There should be no articles initialy.")
+        #expect(viewModel.loadState == .loading, "The view model should start in the loading state.")
     }
 
     @Test func viewModelLoadsArticles() async throws {
@@ -22,5 +23,6 @@ struct TakeHomeTestsTests {
         await viewModel.loadArticles()
 
         #expect(viewModel.articles.isEmpty == false, "There should be article after loading")
+        #expect(viewModel.loadState == .loaded, "The view model should finish loading in the loaded state.")
     }
 }
