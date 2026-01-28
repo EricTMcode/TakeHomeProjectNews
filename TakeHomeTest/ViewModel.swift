@@ -20,6 +20,17 @@ extension ArticlesListView {
         private(set) var loadState = LoadState.loading
         private(set) var loadError: (any Error)?
 
+        var filterText = ""
+
+        var filteredArticles: [Article] {
+            if filterText.isEmpty {
+                articles
+            } else {
+                articles.filter {
+                    $0.title.localizedStandardContains(filterText)
+                }
+            }
+        }
 
         func loadArticles() async {
             loadState = .loading
